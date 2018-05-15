@@ -1,0 +1,64 @@
+:root {
+    --color-header-background: #29363c;
+    --color-header-primary-accent: #f4837d;
+    --color-header-secondary-accent: #9ab999;
+    --color-text-background: #f6f6f6;
+    --color-foto-overlay: rgba(49, 54, 60, 0.55);
+    
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* HEADER */
+
+.header {
+    background-color: var(--color-header-background);
+    padding: 21pt 21pt 21pt 21pt;
+    border-bottom: 3pt solid var(--color-header-primary-accent);
+}
+
+.header-logo-text a {
+    text-decoration: none;
+    color: white;
+    font-size: 21pt;
+    font-weight: var(--font-weight-bold);
+}
+
+.header nav {
+    /* TODO: Figure out the correct value for this */
+    padding-top: 4pt;
+    float: right;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header ul li {
+    display:inline-block;
+    padding-left: 7pt;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12pt;
+    font-weight: var(--font-weight-light);
+}
+
+.header ul li.header-nav-item-about_me a {
+    color: var(--color-header-secondary-accent);
+}
+
+.header ul li.header-nav-item-active a {
+    color: var(--color-header-primary-accent);
+}

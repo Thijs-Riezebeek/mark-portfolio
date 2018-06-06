@@ -8,6 +8,10 @@
     --font-weight-bold: 700;
     --font-weight-regular: 400;
     --font-weight-light: 300;
+    
+    --header-height: 100px;
+    --header-content-spacing: 8%;
+    --content-footer-spacing: 10%;
 }
 
 html, body {
@@ -20,7 +24,7 @@ html, body {
 
 .header {
     background-color: var(--color-header-background);
-    padding: 21pt 21pt 21pt 21pt;
+    padding: 21pt 50pt 21pt 21pt;
     border-bottom: 3pt solid var(--color-header-primary-accent);
 }
 
@@ -61,4 +65,73 @@ html, body {
 
 .header ul li.header-nav-item-active a {
     color: var(--color-header-primary-accent);
+}
+
+.header-content-spacing {
+    position: relative;
+    width: 100%;
+    height: var(--header-content-spacing);
+}
+
+/* CONTENT */
+
+.homepage-container {
+    position: relative;
+    width: 85%;
+    height: calc(100% - var(--header-height) - var(--header-content-spacing) - var(--content-footer-spacing));
+    margin: 0 auto;
+}
+
+.homepage-block-top-row {
+    position: relative;
+    height: 80%;
+    margin-bottom: 10px;
+}
+
+.homepage-block-bottom-row {
+    position: relative;
+    height: 20%;
+}
+
+.homepage-block {
+    position:relative;
+    display: inline-block;
+    height: 100%;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.homepage-block h2 {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:0;
+    margin:0;
+    color: white;
+    font-size: 30pt;
+    font-weight: var(--font-weight-light);
+}
+
+.homepage-block-video {
+    width: 60%;
+    margin-right: 10px;
+}
+
+.homepage-block-design {
+    width: calc(40% - 10px);
+}
+
+.homepage-block-foto {
+    width: 35%;
+    margin-right: 10px;
+}
+
+.homepage-block-projects {
+    width: calc(35% - 10px);
+    margin-right: 10px;
+}
+
+.homepage-block-aboutme {
+    width: calc(30% - 10px);
 }
